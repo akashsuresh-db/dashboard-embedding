@@ -1,0 +1,19 @@
+command:
+  - "uvicorn"
+  - "app:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  # Replace the values below with your own workspace/resource identifiers.
+  # Never commit real IDs to a public repository.
+  - name: WORKSPACE_ID
+    value: "<YOUR_WORKSPACE_ID>"
+  - name: DASHBOARD_ID
+    value: "<YOUR_DASHBOARD_ID>"
+  - name: GENIE_SPACE_ID
+    value: "<YOUR_GENIE_SPACE_ID>"
+  - name: DASHBOARD_ACL_PATH
+    value: "<YOUR_DASHBOARD_ACL_PATH>"
